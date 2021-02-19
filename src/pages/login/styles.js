@@ -1,0 +1,82 @@
+import { StyleSheet } from "react-native";
+
+const styles = StyleSheet.create({
+    image:{
+        width:'100%',
+        height:'100%',
+    },
+    container:{
+        flex:1,
+        justifyContent:'flex-end',
+        alignItems:'center',
+        //backgroundColor:'#ccc'
+    },
+    contLogin:{
+        flex:.1,
+        justifyContent:'center',
+        alignItems:'center',
+        marginLeft:200,
+        marginTop:-180,
+        marginBottom:7,
+        //backgroundColor:'red',
+    },
+    textLogin:{
+        color:'#FFF',
+        fontSize:36,
+    },
+    contInputs:{
+        flex:.17,
+        justifyContent:'center',
+        alignItems:'center',
+        //backgroundColor:'blue'
+    },
+    input:{
+        borderWidth:1,
+        borderColor:'#FFF',
+        width:290,
+        borderRadius:10,
+        height:50,
+        margin:12,
+        textAlign:'left',
+        padding:10,
+    },
+    contBotoes:{
+        flex:.1,
+        justifyContent:'center',
+        alignItems:'center',
+        //backgroundColor:'red'
+    },
+    botaoLogin:{
+        backgroundColor: '#FFf',
+        borderWidth:1,
+        borderColor:'#FF6D6D',
+        margin:20,
+        marginTop:60,
+        borderRadius: 10,
+        alignItems:'center',
+        justifyContent: 'center',
+        width:105,
+        height:50,
+        marginRight:-165,
+    },
+    contAdd:{
+        flex:.1,
+        justifyContent:'center',
+        alignItems:'center',
+        //backgroundColor:'blue',
+        flexDirection:'row'
+    },
+    imageLogos:{
+        width:35,
+        height:35,
+        margin:7,
+        backgroundColor:'#FFF',
+        borderRadius:5
+    },
+    reg:{
+        marginLeft:40,
+        color:'#FFF',
+        fontSize:15
+    },
+});
+export default styles;
