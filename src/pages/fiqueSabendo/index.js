@@ -1,13 +1,8 @@
 //import liraries
 import React from "react";
-import { Image, ImageBackground, ScrollView, Text, View } from "react-native";
+import { ImageBackground, ScrollView, Text, TouchableOpacity, View } from "react-native";
 import styles from "./styles";
-import { ProgressCircle } from "react-native-svg-charts"; //https://github.com/JesperLekland/react-native-svg-charts
-import IconEnt from "react-native-vector-icons/Entypo";
-import IconFA5 from "react-native-vector-icons/FontAwesome5";
-import IconMCI from "react-native-vector-icons/MaterialCommunityIcons";
-import IconMI from "react-native-vector-icons/MaterialIcons";
-import { TouchableOpacity } from "react-native-gesture-handler";
+import IconFA from "react-native-vector-icons/FontAwesome";
 
 export default function fiqueSabendo({ navigation }) {
   return (
@@ -102,6 +97,16 @@ export default function fiqueSabendo({ navigation }) {
                   </Text>
                 </View>
               </ScrollView>
+              <TouchableOpacity
+              style={styles.fab}
+              onPress={() => {
+                Linking.openURL(
+                  "https://drive.google.com/file/d/1FyBB8grsJLTWzA87y7Ahg4BOwyRWLXvt/view?usp=sharing"
+                );
+              }}
+            >
+              <IconFA name="plus" size={30} color="#FF6D6D" />
+            </TouchableOpacity>
             </View>
           </View>
         </View>

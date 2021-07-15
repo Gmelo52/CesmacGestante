@@ -58,5 +58,16 @@ const styles = StyleSheet.create({
         color:'#fff',
         fontSize:16,
     },
+    fab:{
+    alignItems: "center",
+    justifyContent: "center",
+    width: 70,
+    position: "absolute",
+    bottom: 10,
+    right: 10,
+    height: 70,
+    backgroundColor: "#fff",
+    borderRadius: 100,
+  }
 });
 export default styles;
