@@ -7,7 +7,7 @@ import Slider from '@react-native-community/slider';
 
 export default function Cadastro ({navigation}) {
     return (
-        <KeyboardAvoidingView>
+        <KeyboardAvoidingView behavior={"height"}>
             <ImageBackground source={require('../../assets/bgCadastro.png')} style={styles.image}>
                 <View style={styles.container}>
                     <View style={styles.contCadastro}>
@@ -17,7 +17,6 @@ export default function Cadastro ({navigation}) {
                         <TextInput style={styles.input} placeholder='Nome' placeholderTextColor='white'/>
                         <TextInput style={styles.input} placeholder='Email' placeholderTextColor='white'/>
                         <TextInput style={styles.input} placeholder='Senha' placeholderTextColor='white'/>
-                        <TextInput style={styles.input} placeholder='Repetir Senha' placeholderTextColor='white'/>
                     </View>
                     <View style={styles.contSemanas}>
                         <Text style={styles.textSemanas}>Semanas de gravidez</Text>

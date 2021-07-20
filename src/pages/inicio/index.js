@@ -6,7 +6,7 @@ export default function Inicio ({navigation}) {
     return (
         <ImageBackground source={require('../../assets/bgInicio.png')} style={styles.image}>
             <View style={styles.container}>
-                <Text style={{fontWeight: 'bold'}}>NOME DO APP</Text>
+                <Text style={{fontWeight: 'bold', color:'#FF6D6D', fontSize: 32, marginBottom: 250, }}>Gestação Florecer</Text>
             </View>  
             <View style={styles.botoes}>
                 <TouchableOpacity style={styles.botaoLogin} onPress={() => navigation.navigate("login")} >

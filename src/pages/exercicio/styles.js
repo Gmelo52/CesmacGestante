@@ -30,36 +30,44 @@ const styles = StyleSheet.create({
         alignItems:'center',
         flex:.95
     },
-    boxGraf:{
-        justifyContent:'center',
-        alignItems: 'center',
-        width:largura - 50,
-        height:250,
-    },
-    semanas:{
-        margin:20,
-        height:200,
-        width:200,
+    viewTitle:{
         justifyContent: 'center',
         alignItems:'center',
-        position:'absolute'
     },
-    boxButton:{
-        width:'100%', 
-        height:100,
-        flexDirection:'row',
-        alignItems:'center',
-        alignContent:'center',
-        justifyContent:'space-around',
+    title:{
+        fontSize:35,
+        color:'#fff',
+        alignContent:'stretch',
     },
-    boxIconButton:{
-        flexDirection:'column',
-        alignItems:'center',
-        alignContent:'center',
+    viewText:{
+        width:largura - 70,
+        borderRadius:10,
+        backgroundColor:'rgba(255,255,255,0.1)',
+        marginVertical: 10,
         justifyContent: 'center',
-        height:altura / 7,
-        width:80,
-
-    }
+    },
+    itemText:{
+        alignItems:'center',
+        margin: 10,
+        color:'#fff',
+        fontSize:22,
+    },
+    subText:{
+        textAlign:'auto',
+        marginHorizontal: 10,
+        color:'#fff',
+        fontSize:16,
+    },
+    fab:{
+        alignItems: "center",
+        justifyContent: "center",
+        width: 70,
+        position: "absolute",
+        bottom: 10,
+        right: 10,
+        height: 70,
+        backgroundColor: "#fff",
+        borderRadius: 100,
+      }
 });
 export default styles;

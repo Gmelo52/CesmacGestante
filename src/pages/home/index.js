@@ -3,10 +3,9 @@ import React from 'react';
 import { Image, ImageBackground, ScrollView, Text, View } from 'react-native';
 import styles from './styles'
 import { ProgressCircle } from 'react-native-svg-charts' //https://github.com/JesperLekland/react-native-svg-charts
-import IconEnt from 'react-native-vector-icons/Entypo'
 import IconFA5 from 'react-native-vector-icons/FontAwesome5'
+import IconFA from 'react-native-vector-icons/FontAwesome'
 import IconMCI from 'react-native-vector-icons/MaterialCommunityIcons'
-import IconMI from 'react-native-vector-icons/MaterialIcons'
 import { TouchableOpacity } from 'react-native-gesture-handler';
 
 export default function Home ({navigation}){
@@ -43,9 +42,13 @@ export default function Home ({navigation}){
                                         <Image source={require('../../assets/escova.png')} style={{width:25, height:25, margin:5}}/>
                                         <Text style={{fontSize:15, color:'#FF6D6D', textAlign: 'center', marginBottom: 5}}>Cuidados Bucais</Text>
                                     </TouchableOpacity>
-                                    <TouchableOpacity style={styles.boxIconButton} onPress={() => navigation.navigate('fiqueSabendo')}>
-                                        <IconEnt name="megaphone" color={'#FF6D6D'} size={25} style={{margin:5}}/>
-                                        <Text style={{fontSize:15, color:'#FF6D6D', textAlign: 'center', marginBottom: 5}}>Fique Sabendo</Text>
+                                    <TouchableOpacity style={styles.boxIconButton} onPress={() => navigation.navigate('sexo')}>
+                                        <IconFA name="intersex" color={'#FF6D6D'} size={28} style={{margin:5}}/>   
+                                        <Text style={{fontSize:15, color:'#FF6D6D', textAlign: 'center', marginBottom: 5}}>Sexo na Gestação</Text>
+                                    </TouchableOpacity>
+                                    <TouchableOpacity style={styles.boxIconButton} onPress={() => navigation.navigate('aleitamento')}>
+                                        <IconMCI name="mother-nurse" color={'#FF6D6D'} size={28} style={{margin:5}}/>
+                                        <Text style={{fontSize:15, color:'#FF6D6D', textAlign: 'center', marginBottom: 5}}>Aleitamento Materno</Text>
                                     </TouchableOpacity>
                                         </View>
                             </ScrollView>

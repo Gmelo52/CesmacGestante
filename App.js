@@ -11,7 +11,8 @@ import Dieta from './src/pages/dieta';
 import Covid from './src/pages/covid';
 import CuidadosBucais from './src/pages/cuidadosBucais';
 import Exercicio from './src/pages/exercicio';
-import FiqueSabendo from './src/pages/fiqueSabendo';
+import Sexo from './src/pages/sexo';
+import Aleitamento from './src/pages/aleitamento';
 import Exames from './src/pages/exames';
 import Consultas from './src/pages/consultas';
 import Icon from 'react-native-vector-icons/SimpleLineIcons'
@@ -165,7 +166,26 @@ export default function App({navigation}) {
             }
           }
          />
-        <Stack.Screen name="fiqueSabendo" component={FiqueSabendo}
+        <Stack.Screen name="sexo" component={Sexo}
+          options={{
+            headerTitle:'Seja bem vindo(a)!',
+            headerStyle:{
+              backgroundColor: '#FF6D6D', 
+            },
+            headerTintColor: '#fff',
+            headerTitleStyle: { 
+              color:'#FFF',
+            },
+            headerRight: () => 
+              <View style={{flexDirection:'row'}}>
+                <TouchableOpacity>
+                  <Icon name='logout' size={20} style={{marginRight:15, color:'#FFF'}}/>
+                </TouchableOpacity>
+              </View>
+            }
+          }
+         />
+        <Stack.Screen name="aleitamento" component={Aleitamento}
           options={{
             headerTitle:'Seja bem vindo(a)!',
             headerStyle:{

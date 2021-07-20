@@ -53,7 +53,7 @@ const styles = StyleSheet.create({
         fontSize:22,
     },
     subText:{
-        textAlign:'justify',
+        textAlign:'auto',
         marginHorizontal: 10,
         color:'#fff',
         fontSize:16,

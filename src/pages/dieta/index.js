@@ -6,7 +6,7 @@ import {
   Text,
   TouchableOpacity,
   View,
-  Linking
+  Linking,
 } from "react-native";
 import IconFA from "react-native-vector-icons/FontAwesome";
 import styles from "./styles";
@@ -26,118 +26,85 @@ export default function Dieta({ navigation }) {
             <ScrollView showsVerticalScrollIndicator={false}>
               <View style={styles.viewText}>
                 <Text style={styles.itemText}>
-                  Qual a importancia de uma boa alimentação da gravidez?
+                  E o que não pode faltar no prato da gestante?
                 </Text>
                 <Text style={styles.subText}>
-                  Uma alimentação saudável e diversificada durante a gestação é
-                  importante para sua saúde e bem-estar, e para a formação e o
-                  crescimento adequado do bebê. A alimentação saudável assegura
-                  reservas biológicas necessárias ao parto e pós-parto, garante
-                  nutrientes para o período da lactação/amamentação, como também
-                  favorece o ganho de peso adequado de acordo com o estado
-                  nutricional pré-gestacional. O ganho inadequado de peso na
-                  gestação pode ser um fator de risco tanto para a mãe quanto
-                  para a criança, contribuindo para a elevação da prevalência de
-                  uma série de problemas, inclusive o diabetes gestacional.
+                  As refeições devem contemplar todos os grupos alimentares.
+                  {"\n"}- Vegetais e legumes; {"\n"}- Ovos e peixes; {"\n"}-
+                  Carnes (fígado 01 vez por semana); {"\n"}- Frutas; {"\n"}-
+                  Cereais, como arroz, milho;
+                  {"\n"}- Leguminosas (feijão, grão de bico); {"\n"}- Leite e
+                  derivados do leite; {"\n"}- Azeite, de preferência extra
+                  virgem.{"\n"}
                 </Text>
               </View>
               <View style={styles.viewText}>
                 <Text style={styles.itemText}>
-                  O que não pode faltar no prato?
+                  Como distribuir as refeições ao longo do dia?
                 </Text>
                 <Text style={styles.subText}>
-                  A gestante deve ingerir vegetais (folhosos e legumes), frutas,
-                  carne bovina, frango, fígado (uma vez por semana), ovos e
-                  peixes (sardinha, salmão, atum, pescada, cavalinha),
-                  leguminosas (feijão, grão de bico, lentilha, ervilha), cereais
-                  (arroz integral, batata, milho, entre outros), azeites (de
-                  preferência extra virgem), leite e derivados do leite (fora do
-                  horário do almoço e jantar).{"\n"}
-                  {"\n"}
-                  As carnes deverão ser assadas, grelhadas, ensopadas ou
-                  cozidas, evitando as frituras. Recomenda-se não ingerir
-                  gordura vegetal hidrogenada, que pode comprometer o
-                  crescimento e o desenvolvimento fetal.{"\n"}
-                  {"\n"}É fundamental uma alimentação, predominantemente, de
-                  origem vegetal, rica em alimentos naturais e com o menor
-                  processamento industrial possível.{"\n"}
-                  {"\n"}É recomendável o uso de ácido fólico durante toda a
-                  gravidez e de sulfato ferroso durante a gestação e até o 3º
-                  mês pós-parto.{"\n"}
-                  {"\n"}
-                  Tanto o ácido fólico quanto o sulfato ferroso são distribuídos
-                  nas Unidades Básicas de Saúde. As refeições devem ser
-                  distribuídas em seis vezes ao dia, com um intervalo em média
-                  de três horas.
-                </Text>
-              </View>
-              <View style={styles.viewText}>
-                <Text style={styles.itemText}>Ganho de peso na gestação</Text>
-                <Text style={styles.subText}>
-                  O ganho de peso na gestação deve ser suficiente para promover
-                  o desenvolvimento fetal completo e também para armazenar
-                  nutrientes adequados no organismo materno para o aleitamento.
+                  As refeições devem ser distribuídas em seis vezes ao dia:
+                  {"\n"}- Café da manhã {"\n"}- Lanche da manhã {"\n"}- Almoço{" "}
+                  {"\n"}- Lanche {"\n"}- Jantar
+                  {"\n"}- Ceia{"\n"}Evite ficar muitas horas sem comer. {"\n"}
+                  Entre as refeições beba água!{"\n"}
                 </Text>
               </View>
               <View style={styles.viewText}>
                 <Text style={styles.itemText}>
-                  10 passos para que sua alimentação seja saudavel:
+                  O ganho de peso na gestação deve ser suficiente para:
                 </Text>
                 <Text style={styles.subText}>
-                  1) Faça pelo menos três refeições (café da manhã, almoço e
-                  jantar) e duas refeições menores por dia, evitando ficar
-                  muitas horas sem comer. Entre as refeições beba água.{"\n"}
-                  {"\n"}
-                  2) Faça as refeições em horários semelhantes e, sempre que
-                  possível, acompanhada de familiares ou amigos. Evite
-                  “beliscar” nos intervalos e coma devagar, desfrutando o que
-                  você está comendo.{"\n"}
-                  {"\n"}
-                  3) Alimentos mais naturais de origem vegetal devem ser a maior
-                  parte de sua alimentação. Feijões, cereais, legumes, verduras,
-                  frutas, castanhas, leites, carnes e ovos tornam a refeição
-                  balanceada e saborosa. Prefira os cereais integrais.{"\n"}
-                  {"\n"}
-                  4) Ao consumir carnes, retire a pele e a gordura aparente.
-                  Evite o consumo excessivo de carnes vermelhas, alternando,
-                  sempre que possível, com pescados, aves, ovos, feijões ou
-                  legumes.{"\n"}
-                  {"\n"}
-                  5) Utilize óleos, gorduras e açúcares em pequenas quantidades
-                  ao temperar e cozinhar alimentos. Evite frituras e adicionar
-                  açúcar a bebidas. Retire o saleiro da mesa. Fique atenta aos
-                  rótulos dos alimentos e prefira aqueles livres de gorduras
-                  trans.{"\n"}
-                  {"\n"}
-                  6) Coma todos os dias legumes, verduras e frutas da época.
-                  Ricos em várias vitaminas, minerais e fibras, possuem
-                  quantidade pequena de calorias, contribuindo para a prevenção
-                  da obesidade e de doenças crônicas.{"\n"}
-                  {"\n"}
-                  7) Alimentos industrializados, como vegetais e peixes
-                  enlatados, extrato de tomate, frutas em calda ou
-                  cristalizadas, queijos e pães feitos com farinha e fermento,
-                  devem ser consumidos com moderação.{"\n"}
-                  {"\n"}
-                  8) Evite refrigerantes e sucos artificiais, macarrão
-                  instantâneo, chocolates, doces, biscoitos recheados e outras
-                  guloseimas em seu dia a dia.{"\n"}
-                  {"\n"}
-                  9) Para evitar a anemia (falta de ferro no sangue), consuma
-                  diariamente alimentos ricos em ferro, principalmente carnes,
-                  miúdos, feijão, lentilha, grão-de-bico, soja, folhas
-                  verde-escuras, grãos integrais, castanhas e outros. Junto com
-                  esses alimentos, consuma frutas que sejam fontes de vitamina
-                  C, como acerola, goiaba, laranja, caju, limão e outras.{"\n"}
-                  {"\n"}
-                  10) Todos esses cuidados ajudarão você a manter a saúde e o
-                  ganho de peso dentro de limites saudáveis. Pratique alguma
-                  atividade física e evite as bebidas alcoólicas e o fumo.
+                  - Promover o desenvolvimento fetal completo {"\n"}- Armazenar
+                  nutrientes no corpo materno. {"\n"}
+                  {"\n"}BAIXE A CARTILHA PARA SABER QUANTO DE PESO VOCÊ PODE
+                  GANHAR DURANTE A GESTAÇÃO!{"\n"}
+                </Text>
+              </View>
+              <View style={styles.viewText}>
+                <Text style={styles.itemText}>
+                  A alimentação adequada tem diversos benefícios na gestação,
+                  como:
+                </Text>
+                <Text style={styles.subText}>
+                  - Previne doenças como o diabetes gestacional, hipertensão
+                  arterial {"\n"}- Assegura reservas biológicas necessárias ao
+                  parto, pós-parto e amamentação {"\n"}- Favorece o ganho de
+                  peso adequado.{"\n"}
+                </Text>
+              </View>
+              <View style={styles.viewText}>
+                <Text style={styles.itemText}>
+                  Atenção aos 10 passos para uma alimentação saudável!
+                </Text>
+                <Text style={styles.subText}>
+                  Baixe nossa cartilha para ver todos os passos detalhadamente!{"\n"}{"\n"}
+                  1) Faça pelo menos 5 refeições por dia. {"\n"}2) Evite “beliscar” e
+                  coma devagar. {"\n"}3) Dê preferências aos alimentos naturais de
+                  origem vegetal. {"\n"}4) Ao consumir carnes, retire a pele e a
+                  gordura aparente. {"\n"}5) Utilize óleos, gorduras e açúcares em
+                  pequenas quantidades. Retire o saleiro da mesa. Prefira
+                  alimentos livres de gorduras trans. {"\n"}6) Coma todos os dias
+                  legumes, verduras e frutas da época. {"\n"}7) Alimentos
+                  industrializados devem ser consumidos com moderação. {"\n"}8) Evite
+                  refrigerantes e sucos artificiais, macarrão instantâneo,
+                  chocolates, doces, biscoitos recheados e outras guloseimas em
+                  seu dia a dia. {"\n"}9) Para evitar a anemia, consuma diariamente
+                  alimentos ricos em ferro, junto com frutas que sejam fontes de
+                  vitamina C. {"\n"}10) Todos esses cuidados ajudarão você a manter a
+                  saúde e o ganho de peso dentro de limites saudáveis.{"\n"}
                 </Text>
               </View>
             </ScrollView>
-            <TouchableOpacity style={styles.fab} onPress={()=>{Linking.openURL('https://drive.google.com/file/d/1daFvN87-x9HEqiUfsh3Q6jQc_nqJtA1d/view?usp=sharing')}}>
-              <IconFA name="plus" size={30} color="#FF6D6D" />
+            <TouchableOpacity
+              style={styles.fab}
+              onPress={() => {
+                Linking.openURL(
+                  "https://drive.google.com/file/d/19vViC9fdKL8aXvOELq_a6-JR8zW4KetT/view?usp=sharing"
+                );
+              }}
+            >
+              <IconFA name="cloud-download" size={30} color="#FF6D6D" />
             </TouchableOpacity>
           </View>
         </View>

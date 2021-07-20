@@ -29,7 +29,7 @@ export default function Covid({ navigation }) {
                 <Text style={styles.subText}>
                   É a doença causada pela infecção com o vírus SARS-CoV-2. Na
                   maior parte dos casos, apresenta-se sem sintomas ou com
-                  sintomas leves, mas pode apresentar sintomas graves.
+                  sintomas leves, mas pode apresentar sintomas graves.{"\n"}
                 </Text>
               </View>
               <View style={styles.viewText}>
@@ -37,9 +37,9 @@ export default function Covid({ navigation }) {
                 <Text style={styles.subText}>
                   A transmissão ocorre de uma pessoa doente para outra, ou por
                   contato próximo. São exemplos dessas formas de contágio:{"\n"}
-                  {"\n"}● Aperto das mãos contaminadas com secreções;{"\n"}●
-                  Gotículas de saliva{"\n"}● Espirro{"\n"}● Tosse{"\n"}● Catarro
-                  {"\n"}● Contato do indivíduo com objetos ou superfícies
+                  {"\n"}- Aperto das mãos contaminadas com secreções;{"\n"}-
+                  Gotículas de saliva{"\n"}- Espirro{"\n"}- Tosse{"\n"}- Catarro
+                  {"\n"}- Contato do indivíduo com objetos ou superfícies
                   contaminadas (como celulares, maçanetas, corrimões, mesas etc)
                   e em seguida tocar o rosto, a boca, os olhos.{"\n"}
                   {"\n"}
@@ -48,7 +48,22 @@ export default function Covid({ navigation }) {
                   secreções contaminadas da mãe, na amamentação, caso não haja
                   cuidados como uso da máscara, higiene das mãos e superfícies
                   transplacentária, ou seja, com o bebê ainda na barriga da mãe,
-                  no entanto é mais raro.
+                  no entanto é mais raro.{"\n"}
+                </Text>
+              </View>
+              <View style={styles.viewText}>
+                <Text style={styles.itemText}>
+                  Quais são os sintomas da Covid-19?
+                </Text>
+                <Text style={styles.subText}>
+                  O quadro de sintomas costuma variar de pessoa para pessoa. A
+                  maioria das gestantes têm uma boa evolução, com quadro leves.
+                  {"\n"}
+                  {"\n"}- Assintomáticos: não apresenta sintomas relacionado com
+                  a COVID-19. {"\n"}- Sintomáticos: pode apresentar febre,
+                  tosse, dor de cabeça, corrimento nasal, espirro, dor de
+                  garganta, cansaço físico, diarreia, perda de paladar e olfato.
+                  {"\n"}
                 </Text>
               </View>
               <View style={styles.viewText}>
@@ -57,42 +72,19 @@ export default function Covid({ navigation }) {
                   Os cuidados para o grupo das gestantes são os mesmos dos
                   demais grupos sociais, portanto reforçam-se as recomendações
                   da OMS e o Ministério da Saúde:{"\n"}
-                  {"\n"}● Use sempre a máscara ao sair de casa;{"\n"}● Adote o
+                  {"\n"}- Use sempre a máscara ao sair de casa;{"\n"}- Adote o
                   isolamento quando existirem sintomas gripais e/ou
                   respiratórios suspeitos daqueles que residem no mesmo
-                  endereço;{"\n"}● Evite compartilhar utensílios de uso pessoal;
-                  {"\n"}● Lave as mãos frequentemente com água e sabão, ou
-                  álcool 70%;{"\n"}● Ao tossir ou espirrar, cobrir a boca e
+                  endereço;{"\n"}- Evite compartilhar utensílios de uso pessoal;
+                  {"\n"}- Lave as mãos frequentemente com água e sabão, ou
+                  álcool 70%;{"\n"}- Ao tossir ou espirrar, cobrir a boca e
                   nariz com lenço ou braço para evitar a dispersão de gotículas.
-                  Evite usar as mãos nesse caso;{"\n"}● Evite o contato físico
+                  Evite usar as mãos nesse caso;{"\n"}- Evite o contato físico
                   nesse momento. Em caso de tosse ou espirros de terceiros,
-                  recomenda-se um distanciamento mínimo de 2 metros;{"\n"}●
-                  Mantenha um sono regular e uma alimentação saudável;{"\n"}●
+                  recomenda-se um distanciamento mínimo de 2 metros;{"\n"}-
+                  Mantenha um sono regular e uma alimentação saudável;{"\n"}-
                   Fique em casa sempre que possível. Mas não deixe de ir às
-                  consultas pré-natal.
-                </Text>
-              </View>
-              <View style={styles.viewText}>
-                <Text style={styles.itemText}>Quais os sintomas?</Text>
-                <Text style={styles.subText}>
-                  O quadro sintomático da COVID-19 costuma variar de pessoa para
-                  pessoa, com casos variando de assintomáticos (sem sintomas)
-                  até quadros sintomáticos mais graves. No caso de gestantes, os
-                  efeitos dessa doença ainda estão sendo investigados, porém se
-                  percebe que o seu seguimento tem sido semelhante aos demais
-                  grupos da população em geral. Dessa forma, divide-se:{"\n"}
-                  {"\n"}● Assintomáticos: aqueles que não apresentam qualquer
-                  manifestação de sintomas gripais, ou qualquer outro quadro
-                  relacionado com a COVID-19;{"\n"}● Sintomáticos: com período
-                  de incubação variando de 2 a 14 dias, os sintomáticos podem
-                  apresentar quadros de febre, tosse seca, corrimento nasal,
-                  cansaço, dor de garganta, diarreia, perda de paladar e olfato,
-                  além de quadros mais graves que compreendem a dificuldade
-                  respiratória, dor no peito, reação hiperinflamatória,
-                  desorientação.{"\n"}É válido ressaltar que nem toda febre,
-                  coriza, tosse ou qualquer um dos sintomas listados é certeza
-                  para COVID-19, mas podem surgir como quadro suspeito, por isso
-                  a importância de estar atenta e buscar atendimento.
+                  consultas pré-natal.{"\n"}
                 </Text>
               </View>
               <View style={styles.viewText}>
@@ -102,7 +94,17 @@ export default function Covid({ navigation }) {
                   extrema importância para o monitoramento das condições da
                   gestação. Além disso, é fundamental a continuidade no
                   calendário vacinal, realização de exames, avaliação de riscos
-                  e demais cuidados da rotina.
+                  e demais cuidados da rotina.{"\n"}
+                </Text>
+              </View>
+              <View style={styles.viewText}>
+                <Text style={styles.itemText}>
+                  Visitas em tempos de pandemia
+                </Text>
+                <Text style={styles.subText}>
+                  As visitas às gestantes e puérperas devem ser evitadas, caso
+                  ocorra a necessidade, todos devem manter-se usando máscaras.
+                  {"\n"}
                 </Text>
               </View>
               <View style={styles.viewText}>
@@ -110,20 +112,36 @@ export default function Covid({ navigation }) {
                   Estou com sintomas, e agora?
                 </Text>
                 <Text style={styles.subText}>
-                  Caso esteja com algum sintoma compatível com a COVID-19 é
-                  fundamental procurar o suporte de saúde, preferencialmente,
-                  procure a Unidade de Saúde em que você está realizando seu
-                  pré-natal.{"\n"}O SUS também conta com serviços como o Disque
-                  136, Whatsapp +55 61 9938-0031 e até mesmo o aplicativo do
-                  Ministério da Saúde, o Coronavírus - SUS, disponível em todas
-                  plataformas digitais. Nesses serviços, você poderá contar com
-                  uma equipe especializada do Ministério da Saúde pronta para
-                  tirar dúvidas, fazer a triagem de acordo com os seus sintomas
-                  e encaminhá-la para o serviço mais próximo, seja em uma
-                  unidade da equipe atenção primária, ou nos Centros de
-                  Atendimento para Enfrentamento da Covid-19.{"\n"}
-                  Em todo caso, não se desespere, procure informações nas fontes
-                  confiáveis e siga as recomendações.
+                  Caso esteja com algum sintoma da COVID-19 procure o serviço de
+                  saúde, preferencialmente, procure a Unidade de Saúde em que
+                  você está realizando seu pré-natal.{"\n"}
+                </Text>
+              </View>
+              <View style={styles.viewText}>
+                <Text style={styles.itemText}>
+                  Estou com Covid-19, o que devo fazer?
+                </Text>
+                <Text style={styles.subText}>
+                  - Realize o isolamento social pelo tempo recomendado;
+                  {"\n"}- Mantenha atenção aos sinais de piora dos sintomas;
+                  {"\n"}- Siga as recomendações médicas;
+                  {"\n"}- Alimente-se bem, beba água e mantenha repouso.
+                  {"\n"}Em caso de piora dos sintomas, procure imediatamente um
+                  serviço de saúde.{"\n"}
+                </Text>
+              </View>
+              <View style={styles.viewText}>
+                <Text style={styles.itemText}>Amamentação e a Covid-19</Text>
+                <Text style={styles.subText}>
+                  O aleitamento materno já tem sua grande importância na saúde
+                  da mãe e do bebê e ainda mais em tempos de pandemia. {"\n"}- Para a
+                  mãe com confirmação/suspeita de Covid-19, é recomendado
+                  continuar amamentando? Sim. {"\n"}A transmissão do vírus SARS-CoV-2
+                  pelo leite materno não foi detectada. Mas é importante seguir
+                  as medidas de higiene adequadas. {"\n"}Os benefícios da amamentação
+                  são superiores aos potenciais riscos de contaminação. {"\n"}{"\n"}BAIXE
+                  AGORA A CARTILHA E CONHEÇA AS RECOMENDAÇÕES PARA REALIZAR O
+                  ALEITAMENTO SEGURO NA COVID-19.{"\n"}
                 </Text>
               </View>
             </ScrollView>
@@ -135,7 +153,7 @@ export default function Covid({ navigation }) {
                 );
               }}
             >
-              <IconFA name="plus" size={30} color="#FF6D6D"/>
+              <IconFA name="cloud-download" size={30} color="#FF6D6D" />
             </TouchableOpacity>
           </View>
         </View>
